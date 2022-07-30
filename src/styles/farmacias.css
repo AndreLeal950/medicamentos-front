@@ -1,0 +1,21 @@
+.input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    width: 20rem;
+    height: 8rem;
+    padding: 5px;
+    font-size: 1.2rem;
+    gap: 2px;
+    background-color: #282c34;
+}
+
+.lista {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-flow: row;
+    flex-wrap: wrap;
+    width: 95%;
+}
