@@ -3,7 +3,7 @@ import axios from 'axios'
 import Card from '../components/CardMedicamentos'
 
 
-import '../styles/medicamentos.css'
+import '../styles/medicamentos.sass'
 
 
 
@@ -117,9 +117,9 @@ const Listamedicamentos = () => {
           lista.map((obj) => {
            return(
            <Card
-               key={obj.codigo}
-               list={lista}
-               setList={setLista}
+              key={obj.codigo}
+              list={lista}
+              setList={setLista}
               id={obj.medicamento_codigo}
               nome={obj.medicamento_nome} 
               codigo={obj.medicamento_codigo_barras}  

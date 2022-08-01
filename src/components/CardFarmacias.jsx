@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/cards.css';
+import '../styles/cards.sass';
 import { MdFmdGood } from 'react-icons/md';
 
 

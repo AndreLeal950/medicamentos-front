@@ -1,5 +1,5 @@
 
-import './styles/App.css';
+import './styles/App.sass';
 import { Routes, Route, Link } from 'react-router-dom';
 
 import Listamedicamentos from './routes/Listamedicamentos';

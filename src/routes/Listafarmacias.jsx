@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import Card from '../components/CardFarmacias';
 
-import '../styles/farmacias.css'
+import '../styles/farmacias.sass'
 
 
 const ListaFarmacias = () => {

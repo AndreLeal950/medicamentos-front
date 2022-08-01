@@ -1,5 +1,5 @@
 import React from 'react'
-import '../styles/sobre.css'
+import '../styles/sobre.sass'
 
 const Sobre = () => {
   return (

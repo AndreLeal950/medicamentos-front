@@ -1,5 +1,5 @@
 import React from 'react'
-import '../styles/home.css'
+import '../styles/home.sass'
 import {VscArrowRight} from 'react-icons/vsc'
 import { Link } from 'react-router-dom'
 
