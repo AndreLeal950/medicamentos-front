@@ -11,22 +11,22 @@ import '../styles/medicamentos.css'
 const Listamedicamentos = () => {
     const [lista, setLista] = useState('')
     const [nome, setNome] = useState(' ')
+    const [barras, setBarras] = useState(' ')
     const [codigo, setCodigo] = useState(' ')
-    const [id, setId] = useState(' ')
     
 
   
   function registroClick() {
     const pDados = {
       nome: nome,
-      codigo_barras: codigo
+      codigo_barras: barras
       }
       axios.post("http://localhost:5000/medicamentos/incluir", pDados)
           .then(res => {
             console.log('Tudo OK!');
             setNome('')
-            setCodigo('')
-            AtualizaInformacao();
+            setBarras('')
+            AtualizaInformacao('');
        
       })
     }
@@ -34,34 +34,38 @@ const Listamedicamentos = () => {
   function updateClick() {
     const pDados = {
       nome: nome,
-      codigo_barras: codigo,
-      id: id
+      codigo_barras: barras,
+      codigo: codigo
       }
-      axios.post("http://localhost:5000/medicamentos/incluir", pDados)
+      axios.post("http://localhost:5000/medicamentos/update", pDados)
           .then(res => {
             console.log('Tudo OK!');
             setNome('')
+            setBarras('')
             setCodigo('')
-            setId('')
-            AtualizaInformacao();
+            AtualizaInformacao('');
        
       })
     }
+ 
   function deleteClick() {
     const pDados = {
-        id: id
+      codigo: codigo
+     
       }
-      axios.post("http://localhost:5000/medicamentos/incluir", pDados)
+      axios.post("http://localhost:5000/medicamentos/exclui", pDados)
           .then(res => {
             console.log('Tudo OK!');
             setNome('')
+            setBarras('')
             setCodigo('')
-            setId('')
-            AtualizaInformacao();
-       
+            AtualizaInformacao('');
+            
+             
       })
     }
       
+
     
     function AtualizaInformacao() {
         axios.get("http://localhost:5000/medicamentos")
@@ -91,16 +95,16 @@ const Listamedicamentos = () => {
           <label htmlFor="codigo">
             <input
               type="number"
-              value={codigo}
-              placeholder='Código do Medicamento'
-              onChange={e => { setCodigo(e.target.value)}} />
+              value={barras}
+              placeholder='Código de Barras'
+              onChange={e => { setBarras(e.target.value)}} />
           </label>
-          <label htmlFor="id">
+          <label htmlFor="codigo">
             <input
               type="number"
-              value={id}
-              placeholder='Id do Medicamento'
-              onChange={e => { setId(e.target.value)}} />
+              value={codigo}
+              placeholder='Codigo do Medicamento'
+              onChange={e => { setCodigo(e.target.value)}} />
           </label>
           </div>
           <div className='button-med'>
@@ -113,7 +117,7 @@ const Listamedicamentos = () => {
           lista.map((obj) => {
            return(
            <Card
-               key={obj.id}
+               key={obj.codigo}
                list={lista}
                setList={setLista}
               id={obj.medicamento_codigo}

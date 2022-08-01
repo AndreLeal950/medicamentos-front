@@ -27,7 +27,7 @@ const ListaFarmacias = () => {
             setNome('')
             setEndereco('')
             setLocalizacao('')
-            AtualizaInformacao();
+            AtualizaInformacao('');
             
              
       })
@@ -46,7 +46,7 @@ const ListaFarmacias = () => {
             setEndereco('')
             setLocalizacao('')
             setCodigo('')
-            AtualizaInformacao();
+            AtualizaInformacao('');
             
              
       })
@@ -62,7 +62,7 @@ const ListaFarmacias = () => {
             setNome('')
             setEndereco('')
             setLocalizacao('')
-            AtualizaInformacao();
+            AtualizaInformacao('');
             
              
       })
@@ -72,7 +72,6 @@ const ListaFarmacias = () => {
     function AtualizaInformacao() {
         axios.get("http://localhost:5000/farmacias")
             .then(res => {
-                console.log('Vão aparecer os dados?');
                 console.log(res.data);
                 setLista(res.data)
         })

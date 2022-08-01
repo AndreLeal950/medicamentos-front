@@ -45,6 +45,11 @@
   gap: .2rem;
 }
 
+.button-card-med {
+  background-color: #282c34;
+  border: none;
+}
+
 
 .card-container-med:hover {
   background-color: #5c828d;

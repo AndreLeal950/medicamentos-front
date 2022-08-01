@@ -43,7 +43,7 @@ Só aqui você pode pesquisar e comparar os preços de mais de 120 mil itens, en
             <p>Quais tipos de medicamentos posso encontrar no app?</p>
                 <ul>
                     <li>Analgésicos para dor de cabeça;</li>
-                    <li>Remédios para pressão alta;</li>
+                    <li>Medicamentos para pressão alta;</li>
                     <li>Relaxantes musculares;</li>
                     <li>Anticoncepcionais;</li>
                     <li>Antialérgicos e muito mais!</li>
@@ -52,9 +52,9 @@ Só aqui você pode pesquisar e comparar os preços de mais de 120 mil itens, en
 
             <p>Nosso catálogo é completo: oferecemos desde suplementos para a academia até artigos pet. Com um clique, você compara os valores e recebe seu pedido na porta de casa.</p>
 
-            <p>Para que sua experiência seja a melhor possível, constantemente realizamos atualizações no app, implementando novas funcionalidades e corrigindo possíveis problemas. Nosso objetivo é de que o Consulta Remédios seja fácil de navegar, rápido e leve para seu smartphone.</p>
+            <p>Para que sua experiência seja a melhor possível, constantemente realizamos atualizações no app, implementando novas funcionalidades e corrigindo possíveis problemas. Nosso objetivo é de que o Consulta Medicamentos seja fácil de navegar, rápido e leve para seu smartphone.</p>
 
-            <p>Consulta Remédios, a sua farmácia particular!</p>
+            <p>Consulta Medicamentos, a sua farmácia particular!</p>
 
 #TudoPelaSaúde
 
