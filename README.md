@@ -1,5 +1,5 @@
 Comando para iniciar o sistema:
-  npm run dev
+  npm start
   
 Para rodar o sistema é necessário instalar as segunintes dependencias:
   
