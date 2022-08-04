@@ -23,7 +23,7 @@ const Listamedicamentos = () => {
       }
       axios.post("http://localhost:5000/medicamentos/incluir", pDados)
           .then(res => {
-            console.log('Tudo OK!');
+           
             setNome('')
             setBarras('')
             AtualizaInformacao('');
@@ -39,7 +39,7 @@ const Listamedicamentos = () => {
       }
       axios.post("http://localhost:5000/medicamentos/update", pDados)
           .then(res => {
-            console.log('Tudo OK!');
+            
             setNome('')
             setBarras('')
             setCodigo('')
@@ -55,7 +55,7 @@ const Listamedicamentos = () => {
       }
       axios.post("http://localhost:5000/medicamentos/exclui", pDados)
           .then(res => {
-            console.log('Tudo OK!');
+           
             setNome('')
             setBarras('')
             setCodigo('')
@@ -70,7 +70,7 @@ const Listamedicamentos = () => {
     function AtualizaInformacao() {
         axios.get("http://localhost:5000/medicamentos")
             .then(res => {
-                console.log('Vão aparecer os dados?');
+             
                 console.log(res.data);
                 setLista(res.data)
         })
